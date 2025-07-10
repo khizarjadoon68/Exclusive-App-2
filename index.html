@@ -14,10 +14,9 @@
     <div class="Whole container">
 
         <!-- container  -->
-        <div class="container top-nabar flex items-center w-full h-6 justify-around bg-black">
+        <div class="hidden sm:flex container top-nabar  items-center w-full h-6 justify-around bg-black">
             <p class="text-white text-xs ml-10  ">Summer Sale for All Swim Suit And free Express Delivery -
-                OFF
-                50%
+                OFF 50%
                 <a class="font-bold ml-3" href="#">ShopNow</a>
             </p>
             <select class="text-xs bg-transparent items-center  text-white block border-gray-300 rounded">
@@ -27,12 +26,12 @@
             </select>
         </div>
 
-        <div class="flex justify-around mt-10">
-            <div class="flex">
+        <div class=" sm:flex justify-around mt-10">
+            <div class="sm:flex">
                 <h1 class="font-bold text-2xl">Exclusive</h1>
             </div>
             <div class="">
-                <ul class="flex items-center mt-2 gap-10">
+                <ul class="md:gap-10 flex ml-10 mt-2 gap-5 ">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
@@ -41,7 +40,7 @@
                 </ul>
             </div>
 
-            <div class="flex">
+            <div class="hidden md:flex">
                 <div class="flex bg-[rgba(245,245,245,1)] rounded-xl w-70 justify-center">
                     <input type="search" placeholder="What are you looking for" class="w-50 ">
                     <span class="mt-1  material-symbols-outlined m-0 p-0">
@@ -54,15 +53,13 @@
                 <a href="#">
                     <img class="w-7 h-7  ml-3 gap-2" src="./img/Cart.png" alt="heart">
                 </a>
-
             </div>
         </div>
-        <hr class="mt-8">
 
+        <hr class=" md:mt-8 hidden">
 
-        <!-- sidebar  -->
         <div class="sidebar flex w-full mt-5">
-            <div class="sidebar-links flex flex-col ml-29">
+            <div class=" hidden md:flex sidebar-links  flex-col ml-29">
                 <ul class="">
                     <li class=""><a href="#">Women's Fashion</a></li>
                     <li class="mt-7"><a href="#">Men's Fashion</a></li>
@@ -75,6 +72,7 @@
                     <li class="mt-7"><a href="#">Health & Beauty</a></li>
                 </ul>
             </div>
+        </div>
             <div class="sidebar-content flex flex-col justify-center  bg-black text-white ml-20 w-105">
                 <div class="ml-25">
                     <p class="flex  items-center "><img src="./img/Iphone-logo.png" alt=""><span class="m-4 mt-5">iPhone
@@ -726,8 +724,8 @@
                 <h1 class="font-bold">Exclusive</h1>
                 <h2><a href="#">Subscribe</a></h2>
                 <p class="text-xs">Get 100% OFF your First Order</p>
-                <div class="flex border-1 border-white rounded-xs mt-3"> <input class="text-xs h-10 p-2" type="search"
-                        placeholder="Enter Your Email">
+                <div class="flex border-1 border-white rounded-xs mt-3"> <input class="text-xs h-10 p-2 border-none"
+                        type="search" placeholder="Enter Your Email">
                     <img class="h-5 mt-2" src="./img/icon-send.png" alt="">
                 </div>
 
