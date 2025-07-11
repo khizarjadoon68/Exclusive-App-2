@@ -13,8 +13,8 @@
 <body>
     <div class="Whole container">
 
-        <!-- container  -->
-        <div class="flex container top-nabar  items-center w-full h-6 justify-around bg-black">
+         <!-- container  -->
+        <div class="hidden sm:flex container top-nabar overflow-hidden items-center w-full h-6 justify-around bg-black">
             <p class="text-white text-xs ml-10  ">Summer Sale for All Swim Suit And free Express Delivery -
                 OFF 50%
                 <a class="font-bold ml-3" href="#">ShopNow</a>
@@ -26,25 +26,29 @@
             </select>
         </div>
 
-        <div class=" flex justify-around mt-10">
+        <div class="flex sm:flex sm:justify-around mt-10">
             <div class="flex">
-                <h1 class="font-bold text-2xl">Exclusive</h1>
+                <h1 class=" font-bold text-2xl">Exclusive</h1>
             </div>
-            <div class="">
-                <ul class=" flex ml-10 mt-2 gap-10 ">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Sign In</a></li>
+           
+            <div class="nav-links ml-50">
+                <ul class=" sm:flex gap-10 md:gap lg:gap-10">
+                    <li class=""><a class="mt-5" href="#">Home</a></li>
+                    <li class=""><a class="mt-5" href="#">Contact</a></li>
+                    <li class=""><a class="mt-5" href="#">About</a></li>
+                    <li class=""><a class="mt-5" href="#">Sign In</a></li>
 
                 </ul>
+                 
             </div>
+            <div class=""><ion-icon onclick="ontoggleMenu(this)" class="text-3xl cursor-pointer font-bold sm:hidden"
+                name="menu"></ion-icon></div>
 
-            <div class="flex">
+            <div class="hidden lg:mt-2 sm:hidden lg:ml-20 md:flex">
                 <div class="flex bg-[rgba(245,245,245,1)] rounded-xl w-70 justify-center">
-                    <input type="search" placeholder="What are you looking for" class="w-50 ">
+                    <input class="w-50 " type="search" placeholder="What are you looking for">
                     <span class="mt-1 material-symbols-outlined m-0 p-0">
-                        search
+                        <img class="mt-1" src="./img/search.png" alt="">
                     </span>
                 </div>
                 <a href="#">
@@ -754,6 +758,16 @@
 
 
     </div>
+
+
+    <script>
+
+const navLink = document.querySelector('nav-links')
+        function ontoggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLink.classList.toggle('top[9%]')
+        }
+    </script>
 </body>
 
 </html>
